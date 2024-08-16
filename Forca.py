@@ -3,7 +3,14 @@ def forca():
     print("----- ADIVINHE O NOME DE UMA FRUTA -----\n")
 
     import random as rd
-    lista = ["LIMAO", "ABACAXI", "JABUTICABA", "UVA", "MELANCIA", "ABACATE", "MORANGO", "MACA", "LARANJA"]
+    lista = ["LIMAO", "ABACAXI", "JABUTICABA", "UVA", "MELANCIA", "ABACATE", "MORANGO", "MACA", "LARANJA",
+             "ABACAXI", "ACAI", "ACEROLA", "AMEIXA", "AMORA", "BANANA", "CAJU", "CAQUI", "CARAMBOLA",
+             "CEREJA", "COCO", "CUPUACU", "FIGO", "FRAMBOESA", "GOIABA", "JACA", "KIWI", "MAMAO", "MANGA",
+             "MARACUJA", "MELANCIA", "MELAO", "MEXERICA", "PERA", "PESSEGO", "PITAIA", "PITANGA", "ROMA",
+             "TAMARINDO", "TANGERINA", "TOMATE", "TORANJA", "TAMARA", "ALFARROBA", "PINHA", "ATEMOITA", "CAFE",
+             "BABACU", "CACAU", "BERGAMOTA", "BIRIBA", "CABELUDINHA", "CRANBERRY", "DAMASCO", "DURIAO", "GRAVIOLA",
+             "GROSELHA", "GUARANA", "MIRTILO", "LIMA", "LICHIA", "MACADAMIA", "MIRTILO", "OXICOCO", "PEQUI",
+             "UMBU"]
 
     def palavra_aleatoria(lista):
         tamanho = len(lista)
