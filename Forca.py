@@ -3,6 +3,7 @@ def forca():
     print("----- ADIVINHE O NOME DE UMA FRUTA -----\n")
 
     import random as rd
+    
     lista = ["LIMAO", "ABACAXI", "JABUTICABA", "UVA", "MELANCIA", "ABACATE", "MORANGO", "MACA", "LARANJA",
              "ABACAXI", "ACAI", "ACEROLA", "AMEIXA", "AMORA", "BANANA", "CAJU", "CAQUI", "CARAMBOLA",
              "CEREJA", "COCO", "CUPUACU", "FIGO", "FRAMBOESA", "GOIABA", "JACA", "KIWI", "MAMAO", "MANGA",
@@ -45,11 +46,13 @@ def forca():
                     print("--------X--------X--------")
                     print(f"Parabéns!\nA palavra correta e {palavra}!")
                     print("--------X--------X--------")
+                    fechar = input("Digite qualquer coisa para encerrar o jogo ")
                     break
                 else:
                     print("Você errou!")
                     print(f"A palavra correta era {palavra}")
                     print("--------X GAME OVER X--------")
+                    fechar = input("Digite qualquer coisa para encerrar o jogo ")
                     break
             else:
                 print("--------X--------X--------\n")
@@ -64,11 +67,13 @@ def forca():
                     print("--------X--------X--------")
                     print(f"Parabéns!\nA palavra correta é {palavra}!")
                     print("--------X--------X--------")
+                    fechar = input("Digite qualquer coisa para encerrar o jogo ")
                     break
                 else:
                     print("Você errou!")
                     print(f"A palavra correta era {palavra}")
                     print("--------X GAME OVER X--------")
+                    fechar = input("Digite qualquer coisa para encerrar o jogo ")
                     break
             else:
                 print(f"Você ainda tem mais {9-int(chances)} chances")
@@ -77,6 +82,6 @@ def forca():
         if chances >= 10:
             print("--------X GAME OVER X--------")
             print(f"A palavra correta era {palavra}")
+            fechar = input("Digite qualquer coisa para encerrar o jogo ")
             break
-
 forca()
