@@ -39,6 +39,12 @@ def forca():
             for i in posicao:
                 pal_secreta[i] = letra_digitada
             print(pal_secreta)
+            if "_" not in pal_secreta:
+                print("--------X--------X--------")
+                print(f"Parabéns!\nA palavra correta e {palavra}!")
+                print("--------X--------X--------")
+                input("Digite qualquer coisa para encerrar o jogo ")
+                break
             opcao = input("Você já sabe qual é a palavra? (S ou N): ")
             if opcao.upper() == "S":
                 resposta = input("Digite a palavra: ")
